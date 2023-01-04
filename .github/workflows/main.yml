@@ -1,13 +1,14 @@
 name: Deploy GH Pages
 
 on:
+  workflow_dispatch:
   push:
-    branches: main
+    branches: master
     paths-ignore:
       - "docs/**"
 
   pull_request:
-    branches: main
+    branches: master
     paths-ignore:
       - "docs/**"
 
